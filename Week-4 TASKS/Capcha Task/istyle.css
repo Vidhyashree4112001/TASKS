@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:orange;
+}
+.container{
+    text-align: center;
+    background-color:white;
+    color:black;
+    padding: 30px;
+}
+button{
+    margin-top: 10px;
+    padding: 5px;
+    background-color:green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

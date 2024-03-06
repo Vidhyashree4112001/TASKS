@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha generator and verifier </title>
+    <link rel="stylesheet" href="istyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body onload="generatecaptcha()">
+    <div class="container">
+        <div id="captcha_container"></div>
+        
+        <br>
+        <label>Enter the Captcha:</label><input type="text" id="userinput">
+        <button onclick="verifycaptcha()">Verify</button>
+        <p id="result"></p>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

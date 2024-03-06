@@ -1,0 +1,29 @@
+
+        body {
+            text-align: center;
+            font-size: 1.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .quizcontainer {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color:pink;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2vw;
+            cursor: pointer;
+        }
+
+        #quizresult {
+            margin-top: 20px;
+        }

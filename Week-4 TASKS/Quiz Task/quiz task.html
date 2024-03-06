@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="quizcontainer">
+        <h2>Interactive Quiz</h2>
+        <form id="quizform" onsubmit="return false;">
+            <p>1. What is the capital of France?</p>
+            <label><input type="radio" name="capital" value="paris">Paris</label>
+            <label><input type="radio" name="capital" value="london">London</label>
+            <label><input type="radio" name="capital" value="berlin">Berlin</label>
+            
+            <p>2. Which planet is known as the red planet?</p>
+            <label><input type="radio" name="planet" value="Mars">Mars</label>
+            <label><input type="radio" name="planet" value="Venus">Venus</label>
+            <label><input type="radio" name="planet" value="Jupiter">Jupiter</label>
+            
+            <p>3. What is the largest mammal on Earth?</p>
+            <label><input type="radio" name="mammal" value="elephant">Elephant</label>
+            <label><input type="radio" name="mammal" value="bluewhale">Blue Whale</label>
+            <label><input type="radio" name="mammal" value="giraffe">Giraffe</label>
+            
+            <br>
+            <button type="submit" onclick="calculate()">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <div id="quizresult"></div>
+    </div>
+
+   <script src="javascript.js"></script>
+</body>
+</html>

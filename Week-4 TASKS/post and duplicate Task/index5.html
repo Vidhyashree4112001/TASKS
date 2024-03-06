@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Duplicate Numbers</title>
+</head>
+<body>
+
+<h2>Enter Numbers:</h2>
+<input type="text" id="inputNumbers" value="">
+<button onclick="removeDuplicates()">Remove Duplicates</button>
+
+<h2>Number without Duplicates:</h2>
+<div id="uniqueArray"></div>
+
+<script>
+    function removeDuplicates() {
+        // Get the input value and split it into an array of numbers
+        var inputNumbers = document.getElementById("inputNumbers").value.trim();
+        var numbersArray = inputNumbers.split(',').map(Number);
+
+        // Remove duplicates
+        var uniqueArray = numbersArray.filter(function(item, index) {
+            return numbersArray.indexOf(item) === index;
+        });
+
+        // Display unique array
+        document.getElementById("uniqueArray").innerHTML = uniqueArray.join(', ');
+    }
+</script>
+
+</body>
+</html>
+
